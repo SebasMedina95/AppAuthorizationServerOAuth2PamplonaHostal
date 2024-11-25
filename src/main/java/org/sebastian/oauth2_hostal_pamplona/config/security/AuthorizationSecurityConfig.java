@@ -52,7 +52,8 @@ public class AuthorizationSecurityConfig {
             authConfig.requestMatchers("/login").permitAll();
             authConfig.anyRequest().authenticated();
         });
-        http.formLogin(Customizer.withDefaults());
+        //Tomado desde la carpeta templates en mis resources.
+        http.formLogin(formLoginConfig -> formLoginConfig.loginPage("/login"));
 
         return http.build();
 
