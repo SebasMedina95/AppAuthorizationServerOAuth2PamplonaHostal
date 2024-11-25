@@ -1,10 +1,5 @@
 package org.sebastian.oauth2_hostal_pamplona.mappers;
 
-// La razón de ser este mapper es que, a diferencia de UserDetails esta era una interfaz que
-// podíamos implementar, pero el RegisteredClient es una clase, y además, no vamos a usar todos los
-// métodos que allí hay ni propiedades, entonces, mejor mapeamos lo que necesitamos.
-
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.sebastian.oauth2_hostal_pamplona.persistence.entities.security.ClientApp;
 import org.springframework.security.oauth2.core.AuthorizationGrantType;
@@ -15,6 +10,10 @@ import org.springframework.security.oauth2.server.authorization.settings.TokenSe
 
 import java.time.Duration;
 import java.util.Date;
+
+// La razón de ser este mapper es que, a diferencia de UserDetails esta era una interfaz que
+// podíamos implementar, pero el RegisteredClient es una clase, y además, no vamos a usar todos los
+// métodos que allí hay ni propiedades, entonces, mejor mapeamos lo que necesitamos.
 
 @Slf4j
 public class ClientAppMapper {
