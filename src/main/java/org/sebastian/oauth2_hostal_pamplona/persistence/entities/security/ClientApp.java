@@ -15,7 +15,6 @@ import java.util.List;
 // =========================================================================================
 
 @Entity
-@Table(name = "TBL_CLIENT_APP_OAUTH2")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

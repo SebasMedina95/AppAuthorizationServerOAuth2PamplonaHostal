@@ -1,7 +1,7 @@
 package org.sebastian.oauth2_hostal_pamplona.common.exceptions;
 
 import jakarta.servlet.http.HttpServletRequest;
-import org.sebastian.hostal_pamplona.dtos.mix.ApiError;
+import org.sebastian.oauth2_hostal_pamplona.dtos.mix.ApiError;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
