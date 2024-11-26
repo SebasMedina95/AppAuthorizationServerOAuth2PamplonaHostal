@@ -33,7 +33,7 @@ public class CustomOAuth2TokenCustomizer implements OAuth2TokenCustomizer<JwtEnc
                     .map(GrantedAuthority::getAuthority)
                     .collect(Collectors.toList());
 
-            context.getClaims().claim("permissions", authorities);
+            context.getClaims().claim("permissions", authorities); // Este permissions lo requeriremos para la API Principal
         }
 
         if( tokenType.equals("id_token") ){
